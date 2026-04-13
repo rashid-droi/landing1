@@ -988,94 +988,216 @@
                 </div>
             </div>
         </section>
+        <section class="py-24 bg-oxford text-white overflow-hidden border-t border-white/5 relative">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-cyber/5 rounded-full blur-[120px] -z-10"></div>
 
-        <!-- 12-Month Engagement Grid (Path-Like) -->
-        <section class="py-24 bg-oxford text-white overflow-hidden border-t border-white/5">
             <div class="max-w-7xl mx-auto px-6 mb-20">
-                <div class="text-center" data-aos="fade-up">
-                    <span class="text-[10px] uppercase font-black tracking-widest text-cyber mb-4 block">Structural
-                        Consistency</span>
-                    <h2 class="text-4xl md:text-5xl font-bold font-philosopher">Full-Year Engagement Calendar</h2>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6" data-aos="fade-up">
+                    <div class="text-left">
+                        <span
+                            class="text-[10px] uppercase font-black tracking-[0.4em] text-cyber mb-4 block underline decoration-cyber underline-offset-8">Lifecycle
+                            Management</span>
+                        <h2 class="text-4xl md:text-5xl font-bold font-philosopher">Full-Year Engagement Track</h2>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white/5 p-2 rounded-full border border-white/10">
+                        <button onclick="scrollTrack('left')"
+                            class="w-12 h-12 rounded-full border border-white/10 hover:bg-cyber hover:text-prussian transition-all group">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="scrollTrack('right')"
+                            class="w-12 h-12 rounded-full border border-white/10 hover:bg-cyber hover:text-prussian transition-all group">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="max-w-[1440px] mx-auto px-4 sm:px-12 lg:px-16">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-4">
-                    <!-- Quarter 1 -->
-                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative" data-aos="fade-up">
-                        <div
-                            class="w-12 h-12 rounded-full bg-cyber text-prussian flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-passport"></i>
+            <div class="relative px-6">
+                <div
+                    class="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent hidden lg:block">
+                </div>
+
+                <div id="calendar-track"
+                    class="flex overflow-x-auto gap-6 pb-12 no-scrollbar snap-x snap-mandatory lg:px-[10%]">
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-cyber/40 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-oxford p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/5 group-hover:border-cyber/50 transition-all duration-500">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">01</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-cyber text-prussian flex items-center justify-center shadow-lg shadow-cyber/20">
+                                        <i class="fas fa-passport text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-cyber uppercase tracking-widest mb-2">Jul — Aug
+                                    </h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Pre-Departure</h3>
+                                    <p class="text-sm text-gray-400 font-light leading-relaxed">Briefings, visa support,
+                                        and cultural prep before the journey begins.</p>
+                                    <div class="h-1 w-0 group-hover:w-full bg-cyber mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-cyber mb-4 pt-4">Jul - Aug</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Pre-Departure</h3>
-                        <p class="text-sm text-gray-400 font-light leading-relaxed">Briefings, visa support, and
-                            cultural prep before the journey begins.</p>
                     </div>
-                    <!-- Quarter 2 -->
-                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div
-                            class="w-12 h-12 rounded-full bg-viridian text-white flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-suitcase-rolling"></i>
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-viridian/40 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-oxford p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/5 group-hover:border-viridian/50 transition-all duration-500">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">02</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-viridian text-white flex items-center justify-center shadow-lg shadow-viridian/20">
+                                        <i class="fas fa-suitcase-rolling text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-viridian uppercase tracking-widest mb-2">Sep —
+                                        Oct</h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Arrival Phase</h3>
+                                    <p class="text-sm text-gray-400 font-light leading-relaxed">On-the-ground
+                                        orientation, university registration, and housing checks.</p>
+                                    <div
+                                        class="h-1 w-0 group-hover:w-full bg-viridian mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-viridian mb-4 pt-4">Sep - Oct</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Arrival Phase</h3>
-                        <p class="text-sm text-gray-400 font-light leading-relaxed">On-the-ground orientation,
-                            university registration, and housing checks.</p>
                     </div>
-                    <!-- Quarter 3 -->
-                    <div class="p-8 rounded-3xl bg-viridian/20 border border-viridian/20 relative" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div
-                            class="w-12 h-12 rounded-full bg-white text-prussian flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-book-open-reader"></i>
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-white/20 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-viridian/10 p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/10 group-hover:border-white/50 transition-all duration-500 backdrop-blur-sm">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">03</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-white text-prussian flex items-center justify-center shadow-lg">
+                                        <i class="fas fa-book-open-reader text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-white uppercase tracking-widest mb-2">Nov — Dec
+                                    </h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Term 1 Integration</h3>
+                                    <p class="text-sm text-gray-200 font-light leading-relaxed">Academic reviews,
+                                        wellbeing assessments, and winter break planning.</p>
+                                    <div class="h-1 w-0 group-hover:w-full bg-white mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-white mb-4 pt-4">Nov - Dec</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Term 1 Integration</h3>
-                        <p class="text-sm text-gray-200 font-light leading-relaxed">Academic reviews, wellbeing
-                            assessments, and winter break planning.</p>
                     </div>
-                    <!-- Quarter 4 -->
-                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div
-                            class="w-12 h-12 rounded-full bg-sinopia text-white flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-chart-pie"></i>
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-sinopia/40 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-oxford p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/5 group-hover:border-sinopia/50 transition-all duration-500">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">04</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-sinopia text-white flex items-center justify-center shadow-lg shadow-sinopia/20">
+                                        <i class="fas fa-chart-pie text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-sinopia uppercase tracking-widest mb-2">Jan — Feb
+                                    </h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Mid-Year Focus</h3>
+                                    <p class="text-sm text-gray-400 font-light leading-relaxed">Exam analysis, course
+                                        correction, and summer internships lead gen.</p>
+                                    <div class="h-1 w-0 group-hover:w-full bg-sinopia mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-sinopia mb-4 pt-4">Jan - Feb</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Mid-Year Focus</h3>
-                        <p class="text-sm text-gray-400 font-light leading-relaxed">Exam analysis, course correction,
-                            and summer internships lead gen.</p>
                     </div>
-                    <!-- Quarter 5 -->
-                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative" data-aos="fade-up"
-                        data-aos-delay="400">
-                        <div
-                            class="w-12 h-12 rounded-full bg-cyber text-prussian flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-users-gear"></i>
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-cyber/40 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-oxford p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/5 group-hover:border-cyber/50 transition-all duration-500">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">05</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-cyber text-prussian flex items-center justify-center shadow-lg shadow-cyber/20">
+                                        <i class="fas fa-users-gear text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-cyber uppercase tracking-widest mb-2">Mar — Apr
+                                    </h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Spring Term</h3>
+                                    <p class="text-sm text-gray-400 font-light leading-relaxed">Continued monitoring,
+                                        mental health check-ins, and career coaching.</p>
+                                    <div class="h-1 w-0 group-hover:w-full bg-cyber mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-cyber mb-4 pt-4">Mar - Apr</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Spring Term</h3>
-                        <p class="text-sm text-gray-400 font-light leading-relaxed">Continued monitoring, mental health
-                            check-ins, and career coaching.</p>
                     </div>
-                    <!-- Quarter 6 -->
-                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative" data-aos="fade-up"
-                        data-aos-delay="500">
-                        <div
-                            class="w-12 h-12 rounded-full bg-viridian text-white flex items-center justify-center font-black absolute -top-6 left-8 shadow-xl">
-                            <i class="fas fa-medal"></i>
+
+                    <div class="snap-center shrink-0 w-[320px] group">
+                        <div class="relative p-1 bg-gradient-to-b from-viridian/40 to-transparent rounded-[2.5rem]">
+                            <div
+                                class="bg-oxford p-8 rounded-[2.4rem] h-[400px] flex flex-col border border-white/5 group-hover:border-viridian/50 transition-all duration-500">
+                                <div class="flex justify-between items-start mb-8">
+                                    <span
+                                        class="text-4xl opacity-50 group-hover:opacity-100 transition-opacity">06</span>
+                                    <div
+                                        class="w-12 h-12 rounded-2xl bg-viridian text-white flex items-center justify-center shadow-lg shadow-viridian/20">
+                                        <i class="fas fa-medal text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">
+                                    <h4 class="text-xs font-black text-viridian uppercase tracking-widest mb-2">May —
+                                        Jun</h4>
+                                    <h3 class="text-2xl font-bold font-philosopher mb-4">Year-End Wrap</h3>
+                                    <p class="text-sm text-gray-400 font-light leading-relaxed">Final exam support,
+                                        housing transition, and prep for the next stage.</p>
+                                    <div
+                                        class="h-1 w-0 group-hover:w-full bg-viridian mt-6 transition-all duration-700">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xs font-black uppercase tracking-widest text-viridian mb-4 pt-4">May - Jun</h4>
-                        <h3 class="text-lg lg:text-xl font-bold mb-4 font-philosopher">Year-End Wrap</h3>
-                        <p class="text-sm text-gray-400 font-light leading-relaxed">Final exam support, housing
-                            transition, and prep for the next stage.</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <style>
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+
+        <script>
+            function scrollTrack(direction) {
+                const track = document.getElementById('calendar-track');
+                const scrollAmount = 340; // Card width + gap
+                if (direction === 'left') {
+                    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                } else {
+                    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
+            }
+        </script>
         <!-- Final CTA & Contact Form -->
         <section id="contact" class="py-32 relative overflow-hidden">
             <div class="absolute inset-0 bg-prussian">
